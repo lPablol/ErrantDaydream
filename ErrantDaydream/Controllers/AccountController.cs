@@ -57,6 +57,7 @@ namespace ErrantDaydream.Controllers
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
+            ViewBag.Page = PageIndex.Login;
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
@@ -164,6 +165,7 @@ namespace ErrantDaydream.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            ViewBag.Page = PageIndex.Regiser;
             return View();
         }
 
